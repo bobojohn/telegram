@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import List from './componenrs/List/List';
+import ContactItem from './componenrs/ContactItem/ContactItem';
 
 function App() {
   const contacts = [
@@ -15,7 +15,7 @@ function App() {
   ]
   return (
     <div >
-      {contacts.map(o => <List name={o.name} imgUrl={o.imgUrl} lastMessage={o.lastMessage} htag={o.htag} online={o.online} />)}
+      {contacts.map(o => <ContactItem name={o.name} imgUrl={o.imgUrl} lastMessage={o.lastMessage} htag={o.htag} online={o.online} />)}
     </div>
   );
 }
